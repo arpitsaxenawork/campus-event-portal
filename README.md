@@ -28,7 +28,7 @@ Developed as a capstone project for **Advanced Internet Programming (AIP)**, **M
 - [Demo Test Accounts](#-demo-test-accounts)
 - [Database Schema](#-database-schema)
 - [Academic Case Study & Viva Guide](#-academic-case-study--viva-guide)
-- [Publishing to GitHub (Git Quickstart)](#-publishing-to-github-git-quickstart)
+- [Clone & Run Locally](#-clone--run-locally)
 - [License](#-license)
 
 ---
@@ -246,32 +246,16 @@ A detailed 750+ line academic report is included in [`docs/CASE_STUDY_REPORT.md`
 
 ---
 
-## 📤 Publishing to GitHub (Git Quickstart)
+## 📥 Clone & Run Locally
 
-To publish this clean repository folder directly to your GitHub profile, run the following commands inside this folder:
+To clone and set up this project locally:
 
 ```bash
-# 1. Navigate to the clean project directory
+git clone https://github.com/arpitsaxenawork/campus-event-portal.git
 cd campus-event-portal
-
-# 2. Initialize git repository
-git init
-
-# 3. Add all files (automatically filtered by .gitignore)
-git add .
-
-# 4. Create initial commit
-git commit -m "feat: initial commit of University Campus Event Management Portal"
-
-# 5. Rename default branch to main
-git branch -M main
-
-# 6. Link to your GitHub repository (replace with your GitHub URL)
-git remote add origin https://github.com/arpitsaxenawork/campus-event-portal.git
-
-# 7. Push to GitHub
-git push -u origin main
 ```
+
+Then follow the [Step-by-Step Setup Guide](#-step-by-step-setup-guide) above to import the database into XAMPP and run the project in Apache NetBeans.
 
 ---
 
