@@ -1,0 +1,77 @@
+/* =========================================================
+   Campus Event Portal - Clean, Modern & Responsive CSS (~90 Lines)
+   ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+
+:root {
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --success: #10b981;
+  --danger: #ef4444;
+  --radius: 10px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--primary); text-decoration: none; }
+.container { max-width: 1100px; margin: 0 auto; padding: 1.5rem; }
+
+/* Navbar */
+.navbar { background: #fff; border-bottom: 1px solid var(--border); padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+.nav-brand { font-size: 1.25rem; font-weight: 800; color: var(--text); }
+.nav-brand span { color: var(--primary); }
+.nav-links { display: flex; gap: 1rem; align-items: center; }
+.nav-links a { font-weight: 600; color: var(--text-muted); padding: 0.4rem 0.8rem; border-radius: 6px; }
+.nav-links a:hover { color: var(--primary); background: #eef2ff; }
+
+/* Buttons */
+.btn { display: inline-block; padding: 0.5rem 1.1rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem; cursor: pointer; border: 1px solid transparent; transition: 0.2s; }
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-primary:hover { background: var(--primary-hover); }
+.btn-outline { background: transparent; border-color: var(--border); color: var(--text); }
+.btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+.btn-danger { background: var(--danger); color: #fff; }
+.btn-sm { padding: 0.3rem 0.7rem; font-size: 0.8rem; }
+
+/* Alerts */
+.alert { padding: 0.8rem 1.2rem; border-radius: 8px; margin-bottom: 1.2rem; font-size: 0.9rem; }
+.alert-success { background: #ecfdf5; color: #065f46; border: 1px solid #a7f3d0; }
+.alert-danger { background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+
+/* Hero */
+.hero { background: linear-gradient(135deg, #4f46e5 0%, #312e81 100%); color: #fff; padding: 3rem 2rem; border-radius: var(--radius); margin-bottom: 2rem; text-align: center; }
+.hero h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 0.5rem; }
+.hero p { color: #c7d2fe; font-size: 1.05rem; }
+
+/* Grid & Cards */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+.card { background: var(--card-bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+.card h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
+.badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; background: #e0e7ff; color: #3730a3; margin-bottom: 0.5rem; }
+.meta { font-size: 0.85rem; color: var(--text-muted); margin: 0.7rem 0; }
+
+/* Tables */
+.table-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-bottom: 2rem; }
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left; }
+th { background: #f1f5f9; padding: 0.8rem 1rem; color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; }
+td { padding: 0.9rem 1rem; border-top: 1px solid var(--border); }
+tr:hover { background: #f8fafc; }
+
+/* Forms */
+.form-card { max-width: 480px; margin: 2rem auto; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 2rem; }
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem; }
+.form-control { width: 100%; padding: 0.6rem 0.8rem; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; }
+.form-control:focus { outline: none; border-color: var(--primary); }
+
+/* Filter Pills */
+.filters { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.pill { padding: 0.35rem 0.85rem; border-radius: 20px; font-size: 0.85rem; background: #fff; border: 1px solid var(--border); color: var(--text); }
+.pill:hover, .pill.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+@media (max-width: 600px) { .navbar { flex-direction: column; gap: 0.5rem; } }

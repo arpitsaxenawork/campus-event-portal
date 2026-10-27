@@ -1,0 +1,54 @@
+# ==============================================================================
+# Git Ignore for Campus Event Portal (Java, Maven, NetBeans, Tomcat)
+# ==============================================================================
+
+# Compiled class files & build artifacts
+target/
+*.class
+*.war
+*.ear
+*.nar
+
+# NetBeans IDE Specific
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-cache/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
+
+# Logs & Temporary Files
+*.log
+log/
+logs/
+*.tmp
+*.bak
+*.swp
+*~
