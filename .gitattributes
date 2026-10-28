@@ -20,3 +20,5 @@
 *.ico binary
 *.jar binary
 *.war binary
+*.pdf binary
+*.docx binary

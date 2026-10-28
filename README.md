@@ -131,6 +131,10 @@ campus-event-portal/
 ├── docs/
 │   └── CASE_STUDY_REPORT.md  # Comprehensive academic case study & viva guide
 │
+├── Report/
+│   ├── Mini Project Report AIP.docx  # Full academic project report (Word)
+│   └── Mini Project Report AIP.pdf   # Formatted printable project report (PDF)
+│
 ├── src/
 │   └── java/
 │       └── com/
